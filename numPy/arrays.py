@@ -35,3 +35,14 @@ data = np.array([[10, 20], [30, 40], [50, 60]])
 print(data)
 print(data[0])
 print(data[:,1]) # : means all rows, 1: means on the second column means it fetch all rows in the second column
+
+# arange is used to create evenly values within specified interval
+# syntax: np.range([start, ], stop, [step, ]dtype=None)
+# it is similar to range but it supports float
+# in ML generate generate datasets, grid, for testing models
+
+r = np.arange(5)
+print(r)
+
+f = np.arange(8, 0, -2)
+print(f)
