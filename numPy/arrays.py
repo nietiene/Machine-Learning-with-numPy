@@ -46,3 +46,11 @@ print(r)
 
 f = np.arange(8, 0, -2)
 print(f)
+
+# linespace is the same as arrange but it is used to display specific numbers within specified interval
+# syntax: ([start, stop, num, endpoint, retstep])
+# num is number being displayed within interval
+# endpoint by defauilt is true means also the last number inclueded if false excluded
+# retspet display spacing btn numbers as well
+l = np.linspace(0, 10, 5) # display five numbers within 10 interal
+print(l)
