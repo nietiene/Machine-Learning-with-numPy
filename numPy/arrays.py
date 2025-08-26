@@ -54,3 +54,10 @@ print(f)
 # retspet display spacing btn numbers as well
 l = np.linspace(0, 10, 5) # display five numbers within 10 interal
 print(l)
+
+ls = np.linspace(0 , 10, 5, endpoint=False)
+print(ls)
+
+arr, step = np.linspace(0, 10 ,5, retstep=True)
+print("Array", arr)
+print("Step between each numbers", step)
