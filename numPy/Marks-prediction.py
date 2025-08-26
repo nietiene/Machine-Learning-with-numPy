@@ -1,3 +1,4 @@
+# Simple linear reggression
 import numpy as np
 import matplotlib.pyplot as plt
 
