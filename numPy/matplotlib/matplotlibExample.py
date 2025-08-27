@@ -62,3 +62,16 @@ plt.show()
 
 # shows mulitiple charts in one figure
 # syntax: plt.subport(rows, cols, index) split figure into grid, index -> which subport you're plotting
+
+plt.figure(figsize=(8, 4)) # create figure and size 8w and 4h
+plt.subplot(1, 2, 1) # draw multiple plot in one figure means one row, 2 colums, and first plot at left
+plt.plot(a, y1, color="blue", marker="o")
+plt.title("X squared")
+
+# second subport
+plt.subplot(1, 2, 2) # place the second plot to the right 
+plt.plot(a, y2, color="green", linestyle="--")
+plt.title("x^1.5")
+
+plt.tight_layout() # adjust spaces between plots to avoid overlap
+plt.show()
