@@ -1,18 +1,19 @@
 # matplotlib is library which used in ML for Data visualization which allows for better learning and data underdstanding!
 import matplotlib.pyplot as plt
+import numpy as np
 
-a = [1, 2, 3, 4, 5, 6]
+a = np.array([1, 2, 3, 4, 5, 6])
 b = [2, 4, 6, 8, 10, 12]
 
 # 1. plt.plot() -> create line which links a and b used for show relationships btn data
 # linestyle -> is used to control tyoe of line as dotted .., dashed --, -. dotdasheed, dottedline :
 # marker -> is used to show point at each value adds point where values meets
 # some marker ex: -> o circle, s square, ^ triange, * star 
-plt.plot(a, b, linestyle="--", marker="o")
-plt.title("Line-chart Example") # title of our chart
-plt.xlabel("X-axis") # label in X axis 
-plt.ylabel("Y-axis") # Y axis label
-plt.show() # shows the graph
+# plt.plot(a, b, linestyle="--", marker="o")
+# plt.title("Line-chart Example") # title of our chart
+# plt.xlabel("X-axis") # label in X axis 
+# plt.ylabel("Y-axis") # Y axis label
+# plt.show() # shows the graph
 
 # # 2. plt.bar() -> used for compare categories
 # categories = ["Banana", "Apples", "Cherries"]
@@ -46,3 +47,14 @@ plt.show() # shows the graph
 # plt.xlabel("X-axis")
 # plt.ylabel("Y-Axis")
 # plt.show()
+
+# legend -> is used to label your line when multiple port are on the same figure
+# how it works -> you must provide labels inside plot() and call .legend() to display them
+
+y1 = a**2
+y2 = a**1.5
+plt.plot(a, y1, label="x squared", color="blue")
+plt.plot(a, y2, label="x squared to 1.5", color="green")
+plt.legend()
+plt.title("Multiple line with legend")
+plt.show()
