@@ -1,4 +1,4 @@
-# matplotlib is library which used in ML for Data visualization which allows for better learning and data underdstanding
+# matplotlib is library which used in ML for Data visualization which allows for better learning and data underdstanding!
 import matplotlib.pyplot as plt
 
 a = [1, 2, 3, 4, 5, 6]
