@@ -1,15 +1,18 @@
 # matplotlib is library which used in ML for Data visualization which allows for better learning and data underdstanding!
 import matplotlib.pyplot as plt
 
-# a = [1, 2, 3, 4, 5, 6]
-# b = [2, 4, 6, 8, 10, 12]
+a = [1, 2, 3, 4, 5, 6]
+b = [2, 4, 6, 8, 10, 12]
 
-# # 1. plt.plot() -> create line which links a and b used for show relationships btn data
-# plt.plot(a, b)
-# plt.title("Line-chart Example") # title of our chart
-# plt.xlabel("X-axis") # label in X axis 
-# plt.ylabel("Y-axis") # Y axis label
-# plt.show() # shows the graph
+# 1. plt.plot() -> create line which links a and b used for show relationships btn data
+# linestyle -> is used to control tyoe of line as dotted .., dashed --, -. dotdasheed, dottedline :
+# marker -> is used to show point at each value adds point where values meets
+# some marker ex: -> o circle, s square, ^ triange, * star 
+plt.plot(a, b, linestyle="--", marker="o")
+plt.title("Line-chart Example") # title of our chart
+plt.xlabel("X-axis") # label in X axis 
+plt.ylabel("Y-axis") # Y axis label
+plt.show() # shows the graph
 
 # # 2. plt.bar() -> used for compare categories
 # categories = ["Banana", "Apples", "Cherries"]
@@ -34,11 +37,12 @@ import matplotlib.pyplot as plt
 # plt.show()
 
 # 4. plt.scatter -> is used to show also relationship  study hours vs exam scores
-hour = [5, 7, 8, 7, 6, 9, 5]
-scores = [99, 86, 87, 88, 100, 86, 103]
+# it uses dot
+# hour = [5, 7, 8, 7, 6, 9, 5]
+# scores = [99, 86, 87, 88, 100, 86, 103]
 
-plt.scatter(hour, scores)
-plt.title("Scatter chart example")
-plt.xlabel("X-axis")
-plt.ylabel("Y-Axis")
-plt.show()
+# plt.scatter(hour, scores)
+# plt.title("Scatter chart example")
+# plt.xlabel("X-axis")
+# plt.ylabel("Y-Axis")
+# plt.show()
