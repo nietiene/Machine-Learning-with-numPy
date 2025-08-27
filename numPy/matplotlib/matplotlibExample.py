@@ -55,6 +55,10 @@ y1 = a**2
 y2 = a**1.5
 plt.plot(a, y1, label="x squared", color="blue")
 plt.plot(a, y2, label="x squared to 1.5", color="green")
-plt.legend()
+plt.legend() # call legend to display labels
 plt.title("Multiple line with legend")
 plt.show()
+
+
+# shows mulitiple charts in one figure
+# syntax: plt.subport(rows, cols, index) split figure into grid, index -> which subport you're plotting
