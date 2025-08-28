@@ -71,8 +71,14 @@ print(array2[:, 0]) # all rows colum 0
 print(array2[:, 1])
 
 # 3D example
+# indexing
 array3 = np.array([[[1, 2], [4, 5],
                     [7, 8], [10, 11]]])
 
 print(array3[0, 0, 0])
 print(array3[0, 1, 1])
+
+# slicing
+print(array3[0, :,:])
+print(array3[:, 0,:])
+print(array3[:, :,1])
