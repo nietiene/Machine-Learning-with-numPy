@@ -23,12 +23,12 @@ print(matrix)
 
 # arrays attributes
 # 1. np.shape -> returns dimensions of arrays as turple, returns rows and columns as turple (rows, colums)
-# usecase in ML: Input features often has a shape (n_sample, n_features)
+# usecase in ML: Input features often has a shape (n_sample, n_features), checks if matrix are compatible for mulitiplication
 shapes = np.array([[1, 2, 3], [4, 5, 6]])
 print(shapes.shape)
 
 # 2. np.ndim() -> retuns dimension of array like 1D, 2D, 3D
-# usercase: in ML 1D -> vector (weight, bias)
+# usercase: in ML 1D -> vector (weight, bias), ensure if your model input is correct
 # 2D -> matrix datasets
 # 3D -> tensors (images, videos, ..)
 
@@ -39,3 +39,19 @@ print(dimension.ndim)
 # usercase in ML: it tells how much datta you're handling
 size = np.array([[1,2, 3, 4], [5, 6, 7, 8]])
 print(size.size)
+
+# 4. np.dtype -> returns data type of the elements in the array
+# usercase: ensure your data and weight is in the right type
+datatype = np.array([1,2, 3], dtype=float)
+print(datatype.dtype)
+
+# Indexing and slicing 
+# 1. indexing -> choosing specific elements in the array
+# 1D example
+array = [10, 20 ,30, 40, 50]
+# indexing
+print(array[0]) # first element
+print(array[-1]) # last element
+
+# slicing
+print(array[0:3])
