@@ -57,3 +57,14 @@ print(array[-1]) # last element
 print(array[0:3]) # from index 0 up to index 3
 print(array[:3]) # include first three elements
 print(array[::3]) # include first second element  jump every items on thrid index
+
+# 2D example
+# indexing
+array2 = np.array([[1, 2, 3],
+                   [4, 5, 6],
+                   [7, 8, 9]])
+print(array2[0, 0]) # row on index 0 and col on index 0
+
+# slicing
+print(array2[0, :]) # row 0 and all colums
+print(array2[:, 0]) # all rows colum 0
