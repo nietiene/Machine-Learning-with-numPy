@@ -28,6 +28,14 @@ shapes = np.array([[1, 2, 3], [4, 5, 6]])
 print(shapes.shape)
 
 # 2. np.ndim() -> retuns dimension of array like 1D, 2D, 3D
+# usercase: in ML 1D -> vector (weight, bias)
+# 2D -> matrix datasets
+# 3D -> tensors (images, videos, ..)
 
 dimension = np.array([[1,2,3], [1,2,3]])
 print(dimension.ndim)
+
+# 3. np.size -> returns total number of element in the array
+# usercase in ML: it tells how much datta you're handling
+size = np.array([[1,2, 3, 4], [5, 6, 7, 8]])
+print(size.size)
