@@ -54,4 +54,5 @@ print(array[0]) # first element
 print(array[-1]) # last element
 
 # slicing
-print(array[0:3])
+print(array[0:3]) # from index 0 up to index 3
+print(array[:3]) # include first three element
