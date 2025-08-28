@@ -16,5 +16,7 @@ print(ones)
 
 
 # 3 np.eye() -> is used to create indentical matrix
+# usercase: linear algebra used in ML optimization
+# solving system equations
 matrix = np.eye((4))
 print(matrix)
