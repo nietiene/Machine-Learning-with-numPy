@@ -68,3 +68,4 @@ print(array2[0, 0]) # row on index 0 and col on index 0
 # slicing
 print(array2[0, :]) # row 0 and all colums
 print(array2[:, 0]) # all rows colum 0
+print(array2[1, 1])
