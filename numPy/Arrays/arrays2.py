@@ -64,8 +64,15 @@ array2 = np.array([[1, 2, 3],
                    [4, 5, 6],
                    [7, 8, 9]])
 print(array2[0, 0]) # row on index 0 and col on index 0
-
+print(array2[1, 1])
 # slicing
 print(array2[0, :]) # row 0 and all colums
 print(array2[:, 0]) # all rows colum 0
-print(array2[1, 1])
+print(array2[:, 1])
+
+# 3D example
+array3 = np.array([[[1, 2], [4, 5],
+                    [7, 8], [10, 11]]])
+
+print(array3[0, 0, 0])
+print(array3[0, 1, 1])
