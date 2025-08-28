@@ -20,3 +20,14 @@ print(ones)
 # solving system equations
 matrix = np.eye((4))
 print(matrix)
+
+# arrays attributes
+# 1. np.shape -> returns dimensions of arrays as turple, returns rows and columns as turple (rows, colums)
+# usecase in ML: Input features often has a shape (n_sample, n_features)
+shapes = np.array([[1, 2, 3], [4, 5, 6]])
+print(shapes.shape)
+
+# 2. np.ndim() -> retuns dimension of array like 1D, 2D, 3D
+
+dimension = np.array([[1,2,3], [1,2,3]])
+print(dimension.ndim)
