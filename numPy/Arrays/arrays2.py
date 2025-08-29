@@ -129,3 +129,6 @@ print(mask)
 # pick elements instead of returning true or false
 element = boolean[boolean > 5]
 print(element) 
+
+# multiple conditions
+print(array3[(array3 > 3) & (array3 < 6)])
