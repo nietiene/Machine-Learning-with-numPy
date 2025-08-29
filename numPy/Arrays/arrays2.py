@@ -114,3 +114,5 @@ print(array3[1:, 0:2, 0:2])
 
 # gets every second elements in last row of all blocks
 print(array3[:, 1, ::2])
+# ::: -> start, stop, end
+# ::2 means : start from index 0 up to last index and skip 1 elements
