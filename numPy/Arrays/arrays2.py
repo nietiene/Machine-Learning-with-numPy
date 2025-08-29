@@ -107,3 +107,5 @@ print("lat one",array3[1, :, 2])
 print("new one", array3[2, :, 1])
 
 # get first 2 rows of last 2 blocks , first 2 columns
+print(array3[1:, 0:2, 0:2])
+# 1:0 takes last two blocks, 0:2 -> first two rows, 0:2 first two columns
