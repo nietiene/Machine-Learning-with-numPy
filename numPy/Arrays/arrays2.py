@@ -116,3 +116,6 @@ print(array3[1:, 0:2, 0:2])
 print(array3[:, 1, ::2])
 # ::: -> start, stop, end
 # ::2 means : start from index 0 up to last index and skip 1 elements
+# indexing and slicing can be applied in ML for selecting samples, Test data
+
+# Boolean indexing is way of pick elements in the array based on specific condition
