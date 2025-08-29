@@ -72,13 +72,23 @@ print(array2[:, 1])
 
 # 3D example
 # indexing
-array3 = np.array([[[1, 2, 3], [4, 5, 6]], # block 1
-                    [[7, 8, 9], [10, 11, 12]],  # block 2
-                    [[13, 14, 15], [16, 17, 18]], # block 3
+array3 = np.array([
+                   [[1, 2, 3],
+                   [4, 5, 6]], # block 1
+                    [
+                        [7, 8, 9], 
+                        [10, 11, 12]
+                    ],  # block 2
+                    [
+                        [13, 14, 15],
+                        [16, 17, 18]
+                    ], # block 3
                   ])
  
 print("shape is", array3.shape)  # (3:2:3) 1 -> there are only one big block
-                                  # syntax: block, columns, element in each column 
+                                  # syntax: block, rows in each block, columns in each row 
                                   # 4 ->  there are four colums
                                   #  2 -> each column contain 2 elements 
 # indexing
+# syntax: block_index, row_index, column_index
+print(array3[0,0,1])
