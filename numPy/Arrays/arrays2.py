@@ -72,6 +72,8 @@ print(array2[:, 1])
 
 # 3D example
 array3 = np.array([
+    # gets every second elements in last row of all blocks
+
                    [[1, 2, 3],
                    [4, 5, 6]], # block 1
                     [
@@ -109,3 +111,6 @@ print("new one", array3[2, :, 1])
 # get first 2 rows of last 2 blocks , first 2 columns
 print(array3[1:, 0:2, 0:2])
 # 1:0 takes last two blocks, 0:2 -> first two rows, 0:2 first two columns
+
+# gets every second elements in last row of all blocks
+print(array3[:, 1, ::2])
