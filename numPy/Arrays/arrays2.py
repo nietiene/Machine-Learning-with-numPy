@@ -91,4 +91,5 @@ print("shape is", array3.shape)  # (3:2:3) 1 -> there are only one big block
                                   #  2 -> each column contain 2 elements 
 # indexing
 # syntax: block_index, row_index, column_index
-print(array3[0,0,1])
+print(array3[0,0,1]) # 2 in block 1
+print(array3[1,1,2])
