@@ -71,7 +71,6 @@ print(array2[:, 0]) # all rows colum 0
 print(array2[:, 1])
 
 # 3D example
-# indexing
 array3 = np.array([
                    [[1, 2, 3],
                    [4, 5, 6]], # block 1
@@ -93,3 +92,18 @@ print("shape is", array3.shape)  # (3:2:3) 1 -> there are only one big block
 # syntax: block_index, row_index, column_index
 print(array3[0,0,1]) # 2 in block 1
 print(array3[1,1,2])
+
+
+# Slicing syntax: start_block:end_block, start_row:end_row, start_column:end_column
+# start:end are indexes
+# : all elements belong to that dimension
+
+# example get first two block with all columns and rows
+print(array3[0:1, :, :]) # 0:1 0 -> block 0 & 1, : -> all rows, : -> all columns
+# get all blocks with its first row
+print(array3[0:3, 0, :]) 
+# get last column of all rows in second block
+print("lat one",array3[1, :, 2])
+print("new one", array3[2, :, 1])
+
+# get first 2 rows of last 2 blocks , first 2 columns
