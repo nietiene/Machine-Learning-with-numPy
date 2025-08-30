@@ -33,4 +33,10 @@ print(a ** 2)
 # shape(3, 4) and (1, 4) works
 # but shape(3, 4) and (2, 4) fails
 
-# rule 2: 
+# rule 2: if the dimension is 1 expand it
+# if an array has 1 numPy expand it over and over
+# if first one is (3, 1) expand it to (3, 4)
+
+# rule 3: if dimensions are missing treat them as 1 
+# ex: shape 1(3, 4) shape 2 (4,)
+# numPy thinks it as (1 ,4)
