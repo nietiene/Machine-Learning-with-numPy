@@ -54,3 +54,16 @@ arr2 = np.array([[1, 2, 3,],
                  )
 arr3 = np.array([10, 20 ,30])
 print(arr2 + arr3)
+# arr2 is (2 ,3) and arr3 is (3, ) so num py takes it as (2,3)
+# so row 1 = [1 + 10, 2 + 20 , 3 + 30
+# row 2 = [4 + 10, 4 + 20, 6 + 30] 
+
+# invalid broadcasting
+invalid = np.array([[1, 2, 3],
+                    [5 ,6, 7]]
+                    )
+# invalid shape (2, 3) 
+# and invalid2 shape (2, ) it treats it as (1, 2)
+# becuase 3 and 2 are not equal it treats it as an error
+invalid2 = np.array([10 ,20])
+print(invalid + invalid2)
