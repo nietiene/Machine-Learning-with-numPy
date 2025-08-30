@@ -21,3 +21,16 @@ print(a ** 2)
 # power ** is used to squaring input or plynomial features
 
 
+
+# Broadcasting -> is automatically expanding aray without looping 
+# If you have array with different size so broadcasting it try to expand smaller one to make sense
+
+# rule 1: compare shapes from right to the left
+# look at the size of each dimension row and column
+# if they are the same works 
+# if they are difference 1 it strech it
+# if they are different and not 1 it fails
+# shape(3, 4) and (1, 4) works
+# but shape(3, 4) and (2, 4) fails
+
+# rule 2: 
