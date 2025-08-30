@@ -24,6 +24,7 @@ print(a ** 2)
 
 # Broadcasting -> is automatically expanding aray without looping 
 # If you have array with different size so broadcasting it try to expand smaller one to make sense
+# it saves memory and make code short
 
 # rule 1: compare shapes from right to the left
 # look at the size of each dimension row and column
