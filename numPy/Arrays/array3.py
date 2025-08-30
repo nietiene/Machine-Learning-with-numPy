@@ -14,6 +14,10 @@ print(a + b)
 print(b - a)
 print(a * b)
 print( a/ b)
+print(a ** 2)
 
 # usercase: adding bias to the element to bias in neural network + 
-#  error caliculation - , multiplying values to weight
+#  error caliculation - , multiplying values to weight * , normalization / 
+# power ** is used to squaring input or plynomial features
+
+
