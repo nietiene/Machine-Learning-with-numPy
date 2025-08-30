@@ -122,6 +122,9 @@ print(array3[:, 1, ::2])
 # usercase -> handling missing or invalid data in ML
 boolean = np.array([1, 2, 3, 4, 5, 6, 7, 8])
 
+# * create boolean mask to print true, false to each elemnt based on condition
+# ? create boolean mask to print true, false to each elemnt based on condition
+# ! create boolean mask to print true, false to each elemnt based on condition
 # create boolean mask to print true, false to each elemnt based on condition
 mask = boolean > 5
 print(mask)
