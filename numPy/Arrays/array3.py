@@ -40,3 +40,11 @@ print(a ** 2)
 # rule 3: if dimensions are missing treat them as 1 
 # ex: shape 1(3, 4) shape 2 (4,)
 # numPy thinks it as (1 ,4)
+
+# example
+arr = np.array([1 ,2 ,3, 4])
+print(arr + 5)
+# shape of arr is 4
+# and shape of 5 is just one number
+# so numPy predict 5 and [5, 5, 5, 5]
+# so output will be [6, 7, 8, 9]
