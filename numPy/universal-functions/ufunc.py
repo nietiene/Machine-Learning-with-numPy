@@ -1,0 +1,3 @@
+# universal function(ufuncs) is function that operate wise-element on darrays
+# they are fast and applied to the whole array at once
+# ex: np.add, np.subtract, np.exp, np.log, np.sqrt etc...
