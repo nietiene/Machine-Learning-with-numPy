@@ -58,12 +58,23 @@ print(arr2 + arr3)
 # so row 1 = [1 + 10, 2 + 20 , 3 + 30
 # row 2 = [4 + 10, 4 + 20, 6 + 30] 
 
+vector = np.array([[1],
+                  [2],
+                  [3]])
+
+# vector shape(3 ,1)
+# the 1 will be expanded as 3 and it become (3,3)
+# arr4 shape(3,) as (1, 3)
+# and also here 1 will expanded as 3 and array become (3, 3) 
+
+arr4 = np.array([10, 20 ,30])
+print(vector + arr4)
 # invalid broadcasting
-invalid = np.array([[1, 2, 3],
-                    [5 ,6, 7]]
-                    )
-# invalid shape (2, 3) 
-# and invalid2 shape (2, ) it treats it as (1, 2)
-# becuase 3 and 2 are not equal it treats it as an error
-invalid2 = np.array([10 ,20])
-print(invalid + invalid2)
+# invalid = np.array([[1, 2, 3],
+#                     [5 ,6, 7]]
+#                     )
+# # invalid shape (2, 3) 
+# # and invalid2 shape (2, ) it treats it as (1, 2)
+# # becuase 3 and 2 are not equal it treats it as an error
+# invalid2 = np.array([10 ,20])
+# print(invalid + invalid2)
