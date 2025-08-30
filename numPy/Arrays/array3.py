@@ -38,7 +38,7 @@ print(a ** 2)
 # if an array has 1 numPy expand it over and over
 # if first one is (3, 1) expand it to (3, 4)
 
-# rule 3: if dimensions are missing treat them as 1 
+#  rule 3: if dimensions are missing treat them as 1 
 # ex: shape 1(3, 4) shape 2 (4,)
 # numPy thinks it as (1 ,4)
 
