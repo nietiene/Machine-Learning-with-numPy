@@ -48,3 +48,9 @@ print(arr + 5)
 # and shape of 5 is just one number
 # so numPy predict 5 and [5, 5, 5, 5]
 # so output will be [6, 7, 8, 9]
+
+arr2 = np.array([[1, 2, 3,],
+                 [4, 5, 6]]
+                 )
+arr3 = np.array([10, 20 ,30])
+print(arr2 + arr3)
