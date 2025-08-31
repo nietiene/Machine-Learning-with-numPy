@@ -35,6 +35,19 @@ probs = exp_secores / np.sum(exp_secores);
 print(probs)
 
 # 2. np.log(x) means computes natural logarithm of x
-# means to what should be e raised to get xpr
+# means to what should be e raised to get x
+# usercase: compression it can be used to shrink large numbers into smaller manageable numbers
 print(np.log(1)) # 0 because e^0 = 1
 print(np.log(np.e))  # because e^1 = e
+
+income = np.array([1000, 2000, 3000])
+log_income = np.log(income) # it return the large number into smaller number
+print(log_income)
+
+# measure how well the predicted probabilities match the true labales
+# actual label of my data 1 means the positive and 0 means the negative
+y_true = np.array([1, 0, 1])
+# predicted probabilite
+y_pred = np.array([0.9, 0.2, 0.8])
+loss =  -(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
+print(loss)
