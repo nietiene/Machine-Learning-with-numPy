@@ -23,6 +23,7 @@ print(probabilites)
 
 # Gradient Descent
 # row output of model
+# usercase: image classification, text calassification, 
 scores = np.array([1000, 1001, 1002])
 # the why we shifted by max is to make numbers smaller which is better for computation
 shifted_scores = scores - max(scores)
