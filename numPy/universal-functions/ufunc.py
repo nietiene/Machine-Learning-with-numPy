@@ -33,3 +33,8 @@ exp_secores = np.exp(shifted_scores)
 probs = exp_secores / np.sum(exp_secores);
 
 print(probs)
+
+# 2. np.log(x) means computes natural logarithm of x
+# means to what should be e raised to get xpr
+print(np.log(1)) # 0 because e^0 = 1
+print(np.log(np.e))  # because e^1 = e
