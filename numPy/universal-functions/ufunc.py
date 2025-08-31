@@ -54,3 +54,11 @@ y_pred = np.array([0.9, 0.2, 0.8])
 # y^ is y_pred, and y is y_true
 loss =  -(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
 print(loss)
+# how log works
+arrays = np.array([1, 10, 5])
+print(np.log(arrays)) 
+# it checks how power needed to raise e to get each number
+# ex: to get 10 which power will be needed
+# e ^ 1 = 2.7 too small
+# e ^2 = 7.38
+# e ^ 2.3 = 9.9 very close to 10
