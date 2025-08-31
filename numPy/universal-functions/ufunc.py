@@ -47,7 +47,10 @@ print(log_income)
 # measure how well the predicted probabilities match the true labales
 # actual label of my data 1 means the positive and 0 means the negative
 y_true = np.array([1, 0, 1])
-# predicted probabilite
+# predicted probabilite from my model
+# 0.9 means 90%, ...
 y_pred = np.array([0.9, 0.2, 0.8])
+# ? formual: −[y⋅log(y^​)+(1−y)⋅log(1−y^​)]
+# y^ is y_pred, and y is y_true
 loss =  -(y_true * np.log(y_pred) + (1 - y_true) * np.log(1 - y_pred))
 print(loss)
