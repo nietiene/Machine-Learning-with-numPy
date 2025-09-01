@@ -62,3 +62,15 @@ print(np.log(arrays))
 # e ^ 1 = 2.7 too small
 # e ^2 = 7.38
 # e ^ 2.3 = 9.9 very close to 10
+
+
+# np.sqrt() -> means square root of each element in array x
+# ? usercase: distance calicultaion  formula: d=(x1​−x2​)2+(y1​−y2​)2
+sqrt = np.array([1, 2, 3, 4, 5, 6])
+print("Sqaure root", np.sqrt(sqrt));
+
+# distance calicultaion
+point1 = np.array([3, 4])
+point2 = np.array([5 ,6])
+dist = np.sqrt(np.sum((point1 - point2) ** 2))
+print(dist)
