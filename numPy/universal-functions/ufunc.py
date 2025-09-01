@@ -72,5 +72,9 @@ print("Sqaure root", np.sqrt(sqrt));
 # distance calicultaion
 point1 = np.array([3, 4])
 point2 = np.array([5 ,6])
+#   subtract the vectors [3, 4] - [5, 6] = [3 - 5, 4 - 6] = [-2, -2]
+# square the diffrence [-2, -2] ** 2 = [4, 4]
+# find sum  = 4 + 4 = 8
+# find square root = np.sqrt(8) = 2.828
 dist = np.sqrt(np.sum((point1 - point2) ** 2))
 print(dist)
