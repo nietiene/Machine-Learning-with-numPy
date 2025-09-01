@@ -1,0 +1,21 @@
+# sin and cos 
+# np.sin() is function used to caliculate sin of angles
+# np.cos() is also function used to caliculate cos of angles
+# usercase: periodic data like tapmerature over days, sound waves, ..
+# simulating motion and rotation in advanced ML like robotics and computer vision , games help model rotation, movement, ..
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+angles = np.linspace(0, 2 * np.pi, 100)
+
+sin_values = np.sin(angles)
+cosine_values = np.cos(angles)
+
+plt.plot(angles, sin_values, label='Sine', color='blue')
+plt.plot(angles, cosine_values, label="Cosine", color='Orange')
+plt.xlabel('Angle (radians)')
+plt.ylabel('Value')
+plt.title("Sine and cosine values")
+plt.legend()
+plt.show()
