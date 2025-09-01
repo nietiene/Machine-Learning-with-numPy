@@ -7,9 +7,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+# create 100 angles from 0 to
 angles = np.linspace(0, 2 * np.pi, 100)
 
+# caliculate sin of every angle
 sin_values = np.sin(angles)
+# caliculate cosine of every angle
 cosine_values = np.cos(angles)
 
 plt.plot(angles, sin_values, label='Sine', color='blue')
