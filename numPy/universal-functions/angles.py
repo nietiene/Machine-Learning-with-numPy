@@ -7,7 +7,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# create 100 angles from 0 to
+# create 100 angles start from 0 and to 2pi 
 angles = np.linspace(0, 2 * np.pi, 100)
 
 # caliculate sin of every angle
