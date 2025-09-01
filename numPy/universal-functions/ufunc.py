@@ -65,7 +65,7 @@ print(np.log(arrays))
 
 
 # np.sqrt() -> means square root of each element in array x
-# ? usercase: distance calicultaion  formula: d=(x1​−x2​)2+(y1​−y2​)2
+# ? usercase: distance calicultaion, standard deviation  formula: d=(x1​−x2​)2+(y1​−y2​)2
 sqrt = np.array([1, 2, 3, 4, 5, 6])
 print("Sqaure root", np.sqrt(sqrt));
 
