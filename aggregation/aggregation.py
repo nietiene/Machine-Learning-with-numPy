@@ -35,3 +35,23 @@ y_pred = np.array([1.8, 0.0, 8])
 error = np.mean((y_true - y_pred)  **2)
 
 print(error)
+
+# np.std() -> means standard deviation
+# it tells us how to spread out the data is from the mean (average)
+# quick recap: if all number are very close to mean means small standard deviation
+# if value are spread out means large std
+# usercase: Feature scarling / normalization
+
+data = np.array([1, 3, 4, 5])
+std_data = np.std(data) 
+print("Standard deviation", std_data) # too small because eac numbers are very close 
+
+# ML example
+from sklearn.preprocessing import StandardScaler
+
+data = np.array([10], [30], [50], [60])
+scaler = StandardScaler()
+sclaed_data = scaler.fit_transform(data)
+
+print("Original data:\n", data.flatten())
+print("Standardized Data:\n", sclaed_data.flatten())
