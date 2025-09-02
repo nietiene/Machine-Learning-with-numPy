@@ -47,11 +47,15 @@ std_data = np.std(data)
 print("Standard deviation", std_data) # too small because eac numbers are very close 
 
 # ML example
+#   standardScaler is tool from scikit-learn to standardize (rescaling data) features
 from sklearn.preprocessing import StandardScaler
 
-data = np.array([10], [30], [50], [60])
-scaler = StandardScaler()
+data = np.array([[10], [30], [50], [60]])
+scaler = StandardScaler() # caliculates mean and standard deviation of the data 
+# fit caliculates mean and std of the data
+# transform applies standardization formula x - mean / std
+# std = sqrt(mean(x - mean) ** 2)
 sclaed_data = scaler.fit_transform(data)
-
+# help to train faster, prevent dominance of large numbers
 print("Original data:\n", data.flatten())
 print("Standardized Data:\n", sclaed_data.flatten())
