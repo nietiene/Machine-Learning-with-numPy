@@ -29,9 +29,9 @@ mean = np.array([1, 2, 3 ,4, 5, 6, 7, 8])
 print(np.mean(mean))
 
 # usercase: loss function use averaging error across all samples
+# use mean instead of sum it is easy for optimization
 y_true = np.array([2, -0.5, 7])
 y_pred = np.array([1.8, 0.0, 8])
 error = np.mean((y_true - y_pred)  **2)
 
 print(error)
-# 
