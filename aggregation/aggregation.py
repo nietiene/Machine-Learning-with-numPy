@@ -34,3 +34,4 @@ y_pred = np.array([1.8, 0.0, 8])
 error = np.mean((y_true - y_pred)  **2)
 
 print(error)
+# 
