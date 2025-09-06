@@ -78,3 +78,12 @@ point2 = np.array([5 ,6])
 # find square root = np.sqrt(8) = 2.828
 dist = np.sqrt(np.sum((point1 - point2) ** 2))
 print(dist)
+
+# ? min and max functions 
+# np.min() -> return the smallest value in the array
+# np.max() -> return the largest value in the array
+# usercase: feature sclaring and normalization, Data anlysis
+
+arr = [1, 2, 3, 4, 5]
+print("Max value", np.max(arr))
+print("Min value", np.min(arr))
