@@ -17,6 +17,7 @@ Y_std = np.std(Y)
 print("X_mean:", X_mean, "X_std", X_std)
 print("Y_mean", Y_mean, "Y_std", Y_std)
 
+# z= x - mean / std
 x_normalized = (X - X_mean) / X_std;
 Y_normalized = (Y - Y_mean) / Y_std;
 
