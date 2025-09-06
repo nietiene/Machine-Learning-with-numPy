@@ -10,10 +10,10 @@ X_std = np.std(X)
 
 # normalize Y usin Z-score formula
 # z= x - mean / std
-
 Y_mean = np.min(Y)
 Y_std = np.std(Y)
 
+# prepare data for ML and algorithm
 print("X_mean:", X_mean, "X_std", X_std)
 print("Y_mean", Y_mean, "Y_std", Y_std)
 
