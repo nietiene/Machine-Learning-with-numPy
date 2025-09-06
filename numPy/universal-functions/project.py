@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
 X = np.array([1, 2, 3, 5, 6, 7])
 Y = np.array([50, 55, 60, 65, 70, 75, 80])
@@ -20,3 +21,10 @@ print("std of X_normalized", np.std(x_normalized))
 
 print("Mean of y_normalized", np.mean(Y_normalized))
 print("std y_normalized", np.std(Y_normalized))
+
+plt.scatter(x_normalized, Y_normalized, color="blue", label="Normalized Data")
+plt.xlabel('Y_normalized')
+plt.ylabel('y_normalized')
+plt.title("Z-score Normalization")
+plt.legend()
+plt.show()
