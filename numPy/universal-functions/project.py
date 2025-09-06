@@ -1,0 +1,22 @@
+import numpy as np
+
+X = np.array([1, 2, 3, 5, 6, 7])
+Y = np.array([50, 55, 60, 65, 70, 75, 80])
+
+X_mean = np.min(X)
+X_std = np.std(X)
+
+Y_mean = np.array(Y)
+Y_std = np.array(Y)
+
+print("X_mean:", X_mean, "X_std", X_std)
+print("Y_mean", Y_mean, "Y_std", Y_std)
+
+x_normalized = (X - X_mean) / X_std;
+Y_normalized = (Y - Y_mean) / Y_std;
+
+print("Mean of X_normalized", np.mean(x_normalized))
+print("std of X_normalized", np.std(x_normalized))
+
+print("Mean of y_normalized", np.mean(Y_normalized))
+print("std y_normalized", np.std(Y_normalized))
