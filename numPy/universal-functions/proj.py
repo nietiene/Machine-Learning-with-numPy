@@ -1,5 +1,8 @@
 import numpy as np
 
+# converting data btn range of 0 and 1 
+# which help to train data faster, prevent numeric instability
+
 y = np.array([1, 2, 3, 5])
 x = np.array([15, 20, 25, 30, 35])
 
