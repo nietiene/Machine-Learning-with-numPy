@@ -2,13 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 X = np.array([1, 2, 3, 5, 6, 7])
-Y = np.array([50, 55, 60, 65, 70, 75, 80])
+Y = np.array([50, 55, 60, 65, 70, 75])
 
+# preparing Z-normalzation
 X_mean = np.min(X)
 X_std = np.std(X)
 
-Y_mean = np.array(Y)
-Y_std = np.array(Y)
+# normalize Y usin Z-score formula
+# z= x - mean / std
+
+Y_mean = np.min(Y)
+Y_std = np.std(Y)
 
 print("X_mean:", X_mean, "X_std", X_std)
 print("Y_mean", Y_mean, "Y_std", Y_std)
