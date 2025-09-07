@@ -9,3 +9,6 @@ A = np.array([[1, 2,],
 print("Original: ", A)
 
 print("Transposed: ", A.T)
+
+# np.reshape(rows, columns) changes the shape of array without changing its data
+# usercase: in Matrix mulitiplication becuase it require compatible shape
