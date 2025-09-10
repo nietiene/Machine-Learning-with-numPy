@@ -11,3 +11,6 @@ A_inv = np.linalg.inv(A);
 
 print(A @ A_inv);
 
+# np.lin.linalg.det () -> determinant is single number that gives you info about matrice
+# measure how it is invertable or scalable
+print(np.linalg.det(A)) 
