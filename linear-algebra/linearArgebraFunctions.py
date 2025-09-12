@@ -41,3 +41,14 @@ solution = np.linalg.solve(A, B)
 print(solution)
 # 2x+y=5
 # 5𝑥+3𝑦=13
+
+X = np.array([[1, 1],
+              [1, 2],
+              [1, 3]]) # features
+
+y = np.array([1, 2, 3]) # targeted
+
+A = X.T @ X # 
+b = X.T @ y
+w = np.linalg.solve(A, b)
+print("Weight: ", w);
