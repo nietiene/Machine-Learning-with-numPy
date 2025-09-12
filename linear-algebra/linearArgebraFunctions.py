@@ -17,3 +17,4 @@ print(np.linalg.det(A))
 B = np.array ([[2, 5],
                [6, 8]])
 print(np.linalg.det(B)) 
+print(np.linalg.inv(B))
