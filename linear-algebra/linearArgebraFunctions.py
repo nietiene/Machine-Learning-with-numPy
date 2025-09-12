@@ -22,3 +22,13 @@ print(np.linalg.inv(B))
 values, vectors = np.linalg.eig(B)
 print("Values:", values)
 print("Vectors", vectors)
+
+# np.linalg.norm() -> measure how long vector is
+vector = np.array([2, 3])
+print(np.linalg.norm(vector))
+# It comes from the Pythagoras theorem:
+
+# distance btn data point
+vect2 = np.array([4, 5])
+distance = np.linalg.norm(vector - vect2)
+print(distance)
