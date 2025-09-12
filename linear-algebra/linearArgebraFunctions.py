@@ -32,3 +32,12 @@ print(np.linalg.norm(vector))
 vect2 = np.array([4, 5])
 distance = np.linalg.norm(vector - vect2)
 print(distance)
+
+A = np.array([[3, 4],
+              [6, 7]])
+
+B = np.array([1, 2])
+solution = np.linalg.solve(A, B)
+print(solution)
+# 2x+y=5
+# 5𝑥+3𝑦=13
