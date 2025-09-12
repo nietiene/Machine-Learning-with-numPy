@@ -48,7 +48,7 @@ X = np.array([[1, 1],
 
 y = np.array([1, 2, 3]) # targeted
 
-A = X.T @ X # 
-b = X.T @ y
+A = X.T @ X # matrix multiplication
+b = X.T @ y # vector multiplication
 w = np.linalg.solve(A, b)
 print("Weight: ", w);
