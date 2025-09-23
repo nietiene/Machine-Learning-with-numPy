@@ -1,0 +1,3 @@
+[submodule "aggregation"]
+	path = aggregation
+	url = https://github.com/niyomugaboetiene/Machine-Learning-with-numPy/tree/main/aggregation
